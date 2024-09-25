@@ -19,11 +19,14 @@ const openModal = function (e) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
+const newFeature = function () {
+  console.log("New feature");
+};
 
 const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
-  console.log("Welcome");
+  newFeature();
 };
 
 btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
